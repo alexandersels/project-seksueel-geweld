@@ -22,7 +22,7 @@
   }
 
   &__logo {
-    margin: 0 1rem;
+padding-left: 2rem;
   }
 
   &__wrapper {
@@ -109,12 +109,27 @@
     z-index: 2
   }
 
+  &__items {
+    margin: 1rem;
+  }
+
   &__item {
     cursor: pointer;
   }
 
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.8rem;
+    border-bottom: solid 2px transparent;
+
+    &:hover {
+      border-bottom: solid 2px $color-white;
+    }
+  }
+
   &__checkbox:checked ~ &__items-wrapper {
-    height: 12rem;
+    height: 16rem;
   }
 
   &__backdrop {

@@ -23,11 +23,6 @@ body {
     body {
       margin: 0; } }
 
-p, ul {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.2rem; }
-
 .page-container {
   position: relative;
   min-height: 100vh; }
@@ -39,14 +34,6 @@ p, ul {
   margin: 4rem 0; }
   .section__container {
     margin: 2rem 0; }
-
-a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.4rem;
-  border-bottom: solid 2px transparent; }
-  a:hover {
-    border-bottom: solid 2px #fff; }
 
 body {
   font-family: "PannoTextMedium", Arial, sans-serif;
@@ -67,16 +54,22 @@ h1 {
 h2 {
   font-size: 3rem;
   color: #1E64C8;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  margin-left: 2rem; }
 
-p, ul {
-  margin: 1rem 0; }
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin: 1rem 2rem; }
 
-ul {
+.person-list {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
   list-style: none; }
-
-li {
-  padding-left: 2rem; }
+  .person-list__item {
+    margin: 0.5rem 1rem; }
 
 .desktop-navigation {
   height: 7rem;
@@ -94,6 +87,8 @@ li {
     width: 100%;
     display: flex;
     align-items: center; }
+  .desktop-navigation img {
+    padding-left: 2rem; }
   .desktop-navigation__faculty-wrapper {
     display: flex;
     align-items: center;
@@ -149,7 +144,7 @@ li {
     align-items: center;
     justify-content: space-between; }
   .mobile-navigation__logo {
-    margin: 0 1rem; }
+    padding-left: 2rem; }
   .mobile-navigation__wrapper {
     display: flex;
     align-items: center;
@@ -203,10 +198,19 @@ li {
     background-color: #417ACF;
     transition: all .2s;
     z-index: 2; }
+  .mobile-navigation__items {
+    margin: 1rem; }
   .mobile-navigation__item {
     cursor: pointer; }
+  .mobile-navigation__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    border-bottom: solid 2px transparent; }
+    .mobile-navigation__link:hover {
+      border-bottom: solid 2px #fff; }
   .mobile-navigation__checkbox:checked ~ .mobile-navigation__items-wrapper {
-    height: 12rem; }
+    height: 16rem; }
   .mobile-navigation__backdrop {
     display: none;
     position: absolute;
@@ -236,13 +240,13 @@ li {
       font-size: 1.6rem;
       font-weight: 700;
       color: #fff;
-      margin-left: 1rem;
       margin-bottom: 1rem; }
   .footer__navigation-items {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0; }
+    margin-left: 1rem;
+    list-style: none; }
   .footer__navigation-item {
     width: 100%; }
   .footer__faculty-wrapper {
@@ -278,10 +282,17 @@ li {
     list-style: none; }
   .footer__item-link {
     margin: 0 1rem; }
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    border-bottom: solid 2px transparent; }
+    .footer a:hover {
+      border-bottom: solid 2px #fff; }
 
 .image-text {
   display: flex;
-  margin: 2rem 0 4rem 0; }
+  margin: 1rem 0; }
   @media only screen and (max-width: 62em) {
     .image-text {
       flex-direction: column; } }
@@ -290,8 +301,6 @@ li {
     @media only screen and (max-width: 62em) {
       .image-text__text {
         width: 100%; } }
-    .image-text__text p, .image-text__text ul {
-      margin-bottom: 2rem; }
   .image-text__image {
     width: 20%;
     display: flex;

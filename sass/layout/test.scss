@@ -1,6 +1,6 @@
 .image-text {
   display: flex;
-  margin: 2rem 0 4rem 0;
+  margin: 1rem 0;
 
   @media only screen and (max-width: $bp-large)  {
     flex-direction: column;
@@ -14,9 +14,6 @@
       width: 100%;
     }
 
-    p {
-      margin-bottom: 2rem;
-    }
   }
 
   &__image {

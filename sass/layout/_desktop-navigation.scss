@@ -8,9 +8,9 @@
 
   margin-bottom: 2rem;
 
-  @media only screen and (max-width: $bp-medium)  {
-  display: none;
-}
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 
   &__container {
     max-width: 128rem;
@@ -22,11 +22,20 @@
     align-items: center;
   }
 
+  img {
+    padding-left: 2rem;
+  }
+
+  &__logo {
+    //margin-left: 2rem;
+  }
+
   &__faculty-wrapper {
     display: flex;
     align-items: center;
     height: 5rem;
   }
+
   &__faculty {
     height: 3rem;
     width: 100%;
