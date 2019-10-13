@@ -1,4 +1,5 @@
 .desktop-navigation {
+
   height: 7rem;
   width: 100%;
 
@@ -6,6 +7,10 @@
   align-items: center;
 
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-medium)  {
+  display: none;
+}
 
   &__container {
     max-width: 128rem;
@@ -17,9 +22,14 @@
     align-items: center;
   }
 
+  &__faculty-wrapper {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+  }
   &__faculty {
-    height: 2.5rem;
-    width: 20rem;
+    height: 3rem;
+    width: 100%;
     margin-left: 2rem;
   }
 
@@ -37,6 +47,7 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     background-color: $color-primary;
   }
@@ -60,7 +71,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    font-size: $nav-item-fontsize;
+    font-size: 1.6rem;
     font-weight: 300;
     color: $color-white;
 

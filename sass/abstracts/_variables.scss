@@ -1,10 +1,7 @@
 // COLORS
 $color-primary: #1E64C8;
-$color-primary-light: #1E64C8;
-$color-primary-dark: #1E64C8;
-
-$color-secondary-light: #e9f0fa;
-$color-secondary-dark: #ff7730;
+$color-primary-light: #417ACF;
+$color-primary-dark: #083982;
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -16,5 +13,12 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+// RESPONSIVE
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62em; // 1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //900px
+$bp-smallest: 31.25em; //500px
+
 // FONT-SIZE
-$nav-item-fontsize: 1.8rem;
