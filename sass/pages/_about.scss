@@ -1,0 +1,12 @@
+.image-text {
+  display: flex;
+  margin: 2rem 0 4rem 0;
+
+  &__text {
+    padding: 0 2rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

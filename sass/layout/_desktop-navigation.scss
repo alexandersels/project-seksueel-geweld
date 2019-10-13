@@ -1,0 +1,75 @@
+.desktop-navigation {
+  height: 7rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2rem;
+
+  &__container {
+    max-width: 128rem;
+    margin: auto;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__faculty {
+    height: 2.5rem;
+    width: 20rem;
+    margin-left: 2rem;
+  }
+
+  &__logo {
+    display: block;
+    height: 6rem;
+    margin-right: 2rem;
+  }
+
+  &__items-wrapper {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-color: $color-primary;
+  }
+
+  &__items {
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: $nav-item-fontsize;
+    font-weight: 300;
+    color: $color-white;
+
+    border-bottom: 3px solid transparent;
+
+    &--active,
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $color-white;
+    }
+  }
+}

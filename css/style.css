@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  max-width: 128rem;
+  margin: 0 auto; }
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem; }
+
+.section {
+  margin: 4rem 0; }
+  .section__container {
+    margin: 2rem 0; }
+
+body {
+  font-family: "PannoTextMedium", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #777; }
+
+h1, h2 {
+  font-weight: 400; }
+
+h1 {
+  font-size: 4.5rem;
+  color: #1E64C8;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+h2 {
+  font-size: 3rem;
+  color: #1E64C8;
+  margin-bottom: 1.5rem; }
+
+p {
+  margin: 1rem 0; }
+
+.image-text {
+  display: flex;
+  margin: 2rem 0 4rem 0; }
+  .image-text__image {
+    height: 30rem; }
+  .image-text__text {
+    padding: 0 2rem; }
+    .image-text__text p {
+      margin-bottom: 2rem; }
+
+.image-text {
+  display: flex;
+  margin: 2rem 0 4rem 0; }
+  .image-text__text {
+    margin: 0 2rem; }
+
+.desktop-navigation {
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem; }
+  .desktop-navigation__container {
+    max-width: 128rem;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; }
+  .desktop-navigation__faculty {
+    height: 2.5rem;
+    width: 20rem;
+    margin-left: 2rem; }
+  .desktop-navigation__logo {
+    display: block;
+    height: 6rem;
+    margin-right: 2rem; }
+  .desktop-navigation__items-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #1E64C8; }
+  .desktop-navigation__items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none; }
+  .desktop-navigation__item {
+    padding: 1rem;
+    margin: 0 1rem; }
+  .desktop-navigation__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 3px solid transparent; }
+    .desktop-navigation__link--active, .desktop-navigation__link:hover, .desktop-navigation__link:active {
+      border-bottom: 2px solid #fff; }
+
+.footer {
+  height: 10rem;
+  width: 100%;
+  background-color: #1E64C8;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer__text {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem; }
