@@ -10,11 +10,11 @@ html {
   // This defines what 1rem is
   font-size: 62.5%;
 
-  @media only screen and (max-width: $bp-largest)  {
+  @media only screen and (max-width: $bp-largest) {
     font-size: 56.25%;
   }
 
-  @media only screen and (max-width: $bp-medium)  {
+  @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
 
@@ -24,9 +24,13 @@ body {
   box-sizing: border-box;
   max-width: 128rem;
   margin: 0 auto;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   position: relative;
 
-  @media only screen and (max-width: $bp-largest)  {
+  @media only screen and (max-width: $bp-largest) {
     margin: 0;
   }
 }
@@ -46,4 +50,10 @@ body {
   &__container {
     margin: 2rem 0;
   }
+
+  a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+
 }
